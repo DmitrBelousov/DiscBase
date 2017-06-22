@@ -26,7 +26,7 @@ public class Status {
         this.test = test;
         this.weight = weight;
         this.thickness = thickness;
-        this.date = new Date();
+//        this.date = new Date();
     }
 
     public Status(State state, Test test, String testNumber, Double weight, Double thickness) {
@@ -35,7 +35,7 @@ public class Status {
         this.testNumber = testNumber;
         this.weight = weight;
         this.thickness = thickness;
-        this.date = new Date();
+//        this.date = new Date();
     }
 
     public void setId(int id) {
