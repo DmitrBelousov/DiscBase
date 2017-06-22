@@ -19,10 +19,20 @@ public class Status {
     private Double weight;
     private Double thickness;
     private Date date;
+    private String testNumber =null;
 
     public Status(State state, Test test, Double weight, Double thickness) {
         this.state = state;
         this.test = test;
+        this.weight = weight;
+        this.thickness = thickness;
+        this.date = new Date();
+    }
+
+    public Status(State state, Test test, String testNumber, Double weight, Double thickness) {
+        this.state = state;
+        this.test = test;
+        this.testNumber = testNumber;
         this.weight = weight;
         this.thickness = thickness;
         this.date = new Date();
@@ -84,4 +94,11 @@ public class Status {
         return date;
     }
 
+    public String getTestNumber() {
+        return testNumber;
+    }
+
+    public void setTestNumber(String testNumber) {
+        this.testNumber = testNumber;
+    }
 }
